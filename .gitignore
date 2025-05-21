@@ -1,0 +1,74 @@
+
+# === Python (FastAPI) ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+*.db
+.env
+.env.*
+
+# === dataSet ===
+backend/data/
+
+# === my-react-app ===
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# =========
+
+# === Virtual Environment ===
+venv/
+ENV/
+env/
+
+# === FastAPI Static & Temp files ===
+*.pid
+*.bak
+*.swp
+
+# === React (Vite) ===
+node_modules/
+dist/
+.build/
+.cache/
+.vite/
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+
+# === Editor Settings ===
+.vscode/
+.idea/
+
+# === Logs ===
+*.log
+
+# === Feedback JSON (opcional) ===
+bandits/feedback.json
+

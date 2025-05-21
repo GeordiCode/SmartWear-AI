@@ -1,0 +1,370 @@
+{
+  "happy": [
+    {
+      "id": "57552",
+      "name": "Lotus Herbals Floralstay Copper Toast Lip Color 424",
+      "gender": "Women",
+      "masterCategory": "Personal Care"
+    },
+    {
+      "id": "48170",
+      "name": "Fossil Women Blue Floral Print Wallet",
+      "gender": "Women",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "20039",
+      "name": "United Colors of Benetton Women Olive Floral Design Tights",
+      "gender": "Women",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "51039",
+      "name": "Enamor Women Brown Floral Printed Briefs",
+      "gender": "Women",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "57553",
+      "name": "Lotus Herbals Floralstay Truffle Story Lip Color 423",
+      "gender": "Women",
+      "masterCategory": "Personal Care"
+    },
+    {
+      "id": "4987",
+      "name": "Gini and Jony Girl's Viveca White Floral Kidswear",
+      "gender": "Women",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "23621",
+      "name": "Doodle Kids Girls Navy Blue Floral Print Dress",
+      "gender": "Girls",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "5873",
+      "name": "Converse Uniex As Floral Print Ox Brown Shoe",
+      "gender": "Unisex",
+      "masterCategory": "Footwear"
+    },
+    {
+      "id": "24671",
+      "name": "Converse Unisex  Floral Print Red Casual Shoes",
+      "gender": "Unisex",
+      "masterCategory": "Footwear"
+    },
+    {
+      "id": "24670",
+      "name": "Converse Unisex Floral Print Casual Shoes",
+      "gender": "Unisex",
+      "masterCategory": "Footwear"
+    },
+    {
+      "id": "15984",
+      "name": "Turtle Check Men Yellow Shirt",
+      "gender": "Men",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "10065",
+      "name": "Puma Men ducati logo tee Yellow Tshirts",
+      "gender": "Men",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "6287",
+      "name": "Classic Polo Men's Swiss Yellow T-shirt",
+      "gender": "Men",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "7731",
+      "name": "Puma Men's Winglet II Grey Yellow White Flip Flop",
+      "gender": "Men",
+      "masterCategory": "Footwear"
+    },
+    {
+      "id": "8325",
+      "name": "Doodle Boy's Athletic 77 Dept Yellow Teen Kidswear",
+      "gender": "Boys",
+      "masterCategory": "Apparel"
+    }
+  ],
+  "sad": [
+    {
+      "id": "15970",
+      "name": "Turtle Check Men Navy Blue Shirt",
+      "gender": "Men",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "39386",
+      "name": "Peter England Men Party Blue Jeans",
+      "gender": "Men",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "47957",
+      "name": "Murcia Women Blue Handbag",
+      "gender": "Women",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "46885",
+      "name": "Ben 10 Boys Navy Blue Slippers",
+      "gender": "Boys",
+      "masterCategory": "Footwear"
+    },
+    {
+      "id": "7990",
+      "name": "Fila Men's Round Neck Navy Blue T-shirt",
+      "gender": "Men",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "37812",
+      "name": "John Players Men Navy Blue Shirt",
+      "gender": "Men",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "3168",
+      "name": "Nike Men's Incinerate MSL White Blue Shoe",
+      "gender": "Men",
+      "masterCategory": "Footwear"
+    },
+    {
+      "id": "32138",
+      "name": "Playboy Men Blue Titanium Briefs",
+      "gender": "Men",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "39716",
+      "name": "Arrow Woman Women Blue Dress",
+      "gender": "Women",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "28456",
+      "name": "Urban Yoga Women Blue Skirt With Leggings",
+      "gender": "Women",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "8746",
+      "name": "Crocs Kids Navy Blue Clogs",
+      "gender": "Unisex",
+      "masterCategory": "Footwear"
+    },
+    {
+      "id": "31923",
+      "name": "Fabindia Women Blue Silk Sling Bag",
+      "gender": "Women",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "8322",
+      "name": "Doodle Boy's Route 66 Biker Blue Teen Kidswear",
+      "gender": "Boys",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "31782",
+      "name": "Lee Women Paula Blue Top",
+      "gender": "Women",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "32563",
+      "name": "ONLY Women directoire blue Trousers",
+      "gender": "Women",
+      "masterCategory": "Apparel"
+    }
+  ],
+  "angry": [
+    {
+      "id": "21379",
+      "name": "Manchester United Men Solid Black Track Pants",
+      "gender": "Men",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "30039",
+      "name": "Skagen Men Black Watch",
+      "gender": "Men",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "9204",
+      "name": "Puma Men Future Cat Remix SF Black Casual Shoes",
+      "gender": "Men",
+      "masterCategory": "Footwear"
+    },
+    {
+      "id": "48123",
+      "name": "Fossil Women Black Huarache Weave Belt",
+      "gender": "Women",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "18653",
+      "name": "Fila Men Cush Flex Black Slippers",
+      "gender": "Men",
+      "masterCategory": "Footwear"
+    },
+    {
+      "id": "29928",
+      "name": "Police Men Black Dial Watch PL12889JVSB",
+      "gender": "Men",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "17429",
+      "name": "CASIO G-Shock Men Black Digital Watch G-7710-1DR G223",
+      "gender": "Men",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "59051",
+      "name": "Carlton London Women Black & Gold Toned Flats",
+      "gender": "Women",
+      "masterCategory": "Footwear"
+    },
+    {
+      "id": "38402",
+      "name": "Baggit Women Hood Dabang Black Belt",
+      "gender": "Women",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "35913",
+      "name": "Peperone Women Black & White Handbag",
+      "gender": "Women",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "2288",
+      "name": "Nike Women Black T-shirt",
+      "gender": "Women",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "54118",
+      "name": "Rocia Women Black Flats",
+      "gender": "Women",
+      "masterCategory": "Footwear"
+    },
+    {
+      "id": "34009",
+      "name": "Gini and Jony Girls Black Top",
+      "gender": "Girls",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "22950",
+      "name": "Fastrack Unisex Black Dial Watch 9915PP13",
+      "gender": "Unisex",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "12993",
+      "name": "ADIDAS Kids Adispeed Black Sports Shoes",
+      "gender": "Unisex",
+      "masterCategory": "Footwear"
+    }
+  ],
+  "surprised": [
+    {
+      "id": "57767",
+      "name": "Lotus Herbals Whiteglow Yogurt Skin Whitening & Brightening Face Masque 80 g",
+      "gender": "Women",
+      "masterCategory": "Personal Care"
+    },
+    {
+      "id": "55251",
+      "name": "Lakme Absolute Moonlit Highlighter Face Brightener 9G",
+      "gender": "Women",
+      "masterCategory": "Personal Care"
+    },
+    {
+      "id": "4989",
+      "name": "Gini and Jony Girl's Fenil Bright Green Kidswear",
+      "gender": "Women",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "56089",
+      "name": "Colorbar Jewel Bright Star Shine Lip Gloss 03",
+      "gender": "Women",
+      "masterCategory": "Personal Care"
+    },
+    {
+      "id": "39033",
+      "name": "Belmonte Men Steel Bright Assorted Cufflinks",
+      "gender": "Men",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "39034",
+      "name": "Belmonte Men Blue Bright Assorted Cufflinks",
+      "gender": "Men",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "57677",
+      "name": "Lotus Herbals Whiteglow Skin Whitening & Brightening Creme",
+      "gender": "Women",
+      "masterCategory": "Personal Care"
+    },
+    {
+      "id": "14142",
+      "name": "Belmonte Men Bright Assorted Steel Cufflinks",
+      "gender": "Men",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "14145",
+      "name": "Belmonte Men Bright Assorted Copper Cufflinks",
+      "gender": "Men",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "51982",
+      "name": "Inaya Women Bright Pink Nightdress",
+      "gender": "Women",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "39035",
+      "name": "Belmonte Men Steel Bright Assorted Cufflinks",
+      "gender": "Men",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "39032",
+      "name": "Belmonte Men Steel Bright Assorted Cufflinks",
+      "gender": "Men",
+      "masterCategory": "Accessories"
+    },
+    {
+      "id": "40944",
+      "name": "Gini and Jony Girls Kitch Bright Pink Top",
+      "gender": "Girls",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "40943",
+      "name": "Gini and Jony Girls Kitch Bright Pink Top",
+      "gender": "Girls",
+      "masterCategory": "Apparel"
+    },
+    {
+      "id": "18175",
+      "name": "Doodle Kids Girls Party Frock Lavender Dress",
+      "gender": "Girls",
+      "masterCategory": "Apparel"
+    }
+  ]
+}

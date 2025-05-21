@@ -66,6 +66,12 @@ Asegúrate de tener:
 ```bash
 cd my-react-app
 npm install
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm install firebase
+npm install firebase@latest
+npm install react-router-dom
+npm install papaparse
 npm run dev
 ```
 

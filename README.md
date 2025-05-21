@@ -47,6 +47,7 @@ proyectoRopaJordi/
 
 ```bash
 cd backend
+mkdir data
 python -m venv venv
 venv\Scripts\activate        # En Windows
 pip install -r requirements.txt

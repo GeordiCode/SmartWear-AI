@@ -117,4 +117,4 @@ Esto permite que el sistema aprenda qué prendas gustaron más a cada emoción.
 
 ## 📄 Licencia
 
-MIT © [Tu Nombre]
+MIT © [Jordi Ledesma, Diego Llanos]

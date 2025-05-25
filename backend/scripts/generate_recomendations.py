@@ -4,55 +4,102 @@ import pandas as pd
 import json
 from collections import defaultdict
 from pathlib import Path
+import random
 
-# Cargar datos
-df = pd.read_csv("./data/styles.csv", on_bad_lines='skip')
+# === Cargar datos ===
+csv_path = Path("data/ropa_filtrada_con_links.csv")
+df = pd.read_csv(csv_path)
 
-# Diccionario mejorado de estilos por emoción
-emotion_styles = {
-    "happy": ["Floral", "Yellow", "Casual", "Sneakers", "Tshirt", "Kurta"],
-    "sad": ["Blue", "Gray", "Jacket", "Hoodie", "Sweatshirt"],
-    "angry": ["Black", "Leather", "Boots", "Denim", "Biker"],
-    "surprised": ["Bright", "Colorful", "Party", "Shirt", "Dress", "Skirt"]
+# === Normalización ===
+df["articleType"] = df["articleType"].str.lower()
+df["productDisplayName"] = df["productDisplayName"].str.lower()
+df["gender"] = df["gender"].str.lower()
+
+# === Nuevas keywords optimizadas ===
+emotion_keywords = {
+    "happy": [
+        "colorful", "yellow", "bright", "floral", "print", "kurti", "t-shirt", "dress", "cheerful", "joy", "top"
+    ],
+    "sad": [
+        "blue", "gray", "dark", "jacket", "hoodie", "sweater", "coat", "trousers", "pants"
+    ],
+    "angry": [
+        "black", "leather", "biker", "boots", "shirt", "jacket", "denim", "bold", "shorts", "graphic"
+    ],
+    "surprised": [
+        "glitter", "metallic", "party", "top", "shirt", "stylish", "shine", "colorful", "dress"
+    ],
+    "fearful": [
+        "cover", "hoodie", "jacket", "long", "trousers", "coat", "soft", "comfortable", "sweater"
+    ],
+    "disgusted": [
+        "plain", "basic", "clean", "minimal", "simple", "shirt", "sweater", "casual", "t-shirt"
+    ],
+    "neutral": [
+        "t-shirt", "jeans", "basic", "white", "casual", "simple", "shirt", "pants"
+    ]
 }
 
-# Para almacenar recomendaciones
+# === Configuración ===
+MAX_PER_CATEGORY = 20
 recommendations = defaultdict(list)
+output_rows = []
+seen_ids = defaultdict(set)
 
-for emotion, keywords in emotion_styles.items():
-    seen_ids = set()
-    gender_counts = defaultdict(int)
+# === Generación ===
+for emotion, keywords in emotion_keywords.items():
+    for category in df["articleType"].unique():
+        subset = df[df["articleType"] == category]
 
-    for kw in keywords:
-        matches = df[df['productDisplayName'].str.contains(kw, case=False, na=False)]
+        if subset.empty:
+            continue
+
+        mask = subset["productDisplayName"].apply(
+            lambda name: any(kw in name for kw in keywords)
+        )
+        matches = subset[mask]
+
+        # Completar si no hay suficientes coincidencias
+        if len(matches) < MAX_PER_CATEGORY:
+            extra = subset[~mask].sample(min(MAX_PER_CATEGORY - len(matches), len(subset[~mask])), random_state=42)
+            matches = pd.concat([matches, extra])
+
+        # Barajar resultados
+        matches = matches.sample(frac=1).head(MAX_PER_CATEGORY)
+
         for _, row in matches.iterrows():
-            product_id = str(row['id'])
-            gender = row.get("gender", "Unisex")
-            if product_id in seen_ids:
+            item_id = str(row["id"])
+            if item_id in seen_ids[emotion]:
                 continue
 
-            # Limitar a 6 de un mismo género por emoción
-            if gender_counts[gender] >= 6:
-                continue
+            seen_ids[emotion].add(item_id)
 
-            seen_ids.add(product_id)
-            gender_counts[gender] += 1
-
-            recommendations[emotion].append({
-                "id": product_id,
+            item = {
+                "id": item_id,
                 "name": row["productDisplayName"],
-                "gender": gender,
-                "masterCategory": row.get("masterCategory", "Other")
+                "gender": row.get("gender", "unisex"),
+                "masterCategory": row.get("masterCategory", "other"),
+                "category": row["articleType"],
+                "image_url": row["link"]
+            }
+
+            recommendations[emotion].append(item)
+
+            output_rows.append({
+                "emotion": emotion,
+                "id": item_id,
+                "name": row["productDisplayName"],
+                "gender": item["gender"],
+                "category": item["category"]
             })
 
-            if len(recommendations[emotion]) >= 15:
-                break
-        if len(recommendations[emotion]) >= 15:
-            break
-
-# Guardar resultados
-Path("./recommendations").mkdir(exist_ok=True)
-with open("./recommendations/recommendations.json", "w", encoding="utf-8") as f:
+# === Guardar JSON ===
+Path("recommendations").mkdir(exist_ok=True)
+with open("recommendations/recommendations.json", "w", encoding="utf-8") as f:
     json.dump(recommendations, f, indent=2, ensure_ascii=False)
 
-print("Recomendaciones generadas.")
+# === Guardar CSV para análisis ===
+csv_output_path = Path("recommendations/recomendaciones_emocion_categoria.csv")
+pd.DataFrame(output_rows).to_csv(csv_output_path, index=False)
+
+print("✅ Recomendaciones generadas.")

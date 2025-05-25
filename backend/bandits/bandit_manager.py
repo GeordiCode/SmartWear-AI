@@ -3,7 +3,7 @@ import random
 from collections import defaultdict
 
 class MultiArmedBandit:
-    def __init__(self, epsilon=0.1):
+    def __init__(self, epsilon=0.3):
         self.q_values = defaultdict(lambda: defaultdict(float))
         self.counts = defaultdict(lambda: defaultdict(int))
         self.epsilon = epsilon
@@ -19,7 +19,7 @@ class MultiArmedBandit:
 
         return max(options, key=lambda item: q_vals[item["id"]])
 
-    def choose_multiple(self, emotion, options, k=6):
+    def choose_multiple(self, emotion, options, k=10):
         if not options:
             return []
 

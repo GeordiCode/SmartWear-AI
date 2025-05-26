@@ -115,13 +115,6 @@ Esto permite que el sistema aprenda qué prendas gustaron más a cada emoción.
 
 ---
 
-## 📸 Capturas
-
-![Demo](demo_1.png)
-![Detección](demo_2.png)
-
----
-
 ## 📄 Licencia
 
 MIT © [Jordi Ledesma, Diego Llanos]
